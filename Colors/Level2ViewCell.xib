@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment version="4608" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="Level2ViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="T9g-bp-re1">
+                        <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="T9g-bp-re1" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="CxZ-Xn-GnZ"/>
+                <constraint firstAttribute="centerX" secondItem="T9g-bp-re1" secondAttribute="centerX" id="d2F-Re-PRh"/>
+                <constraint firstAttribute="centerY" secondItem="T9g-bp-re1" secondAttribute="centerY" id="dQK-Uc-MUz"/>
+                <constraint firstItem="T9g-bp-re1" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="kQn-Mn-hJj"/>
+                <constraint firstAttribute="trailing" secondItem="T9g-bp-re1" secondAttribute="trailing" id="rG5-Dq-m1z"/>
+                <constraint firstAttribute="bottom" secondItem="T9g-bp-re1" secondAttribute="bottom" id="vlX-Xt-Upm"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="d2F-Re-PRh"/>
+                    <exclude reference="dQK-Uc-MUz"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="iconImage" destination="T9g-bp-re1" id="DG9-5I-Y8H"/>
+            </connections>
+            <point key="canvasLocation" x="-17" y="-18"/>
+        </collectionViewCell>
+    </objects>
+</document>
